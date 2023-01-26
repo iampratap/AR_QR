@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>    
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        <a-marker id="animated-marker" type='barcode' value='6'>
+            <!-- <a-image src="https://cdn.glitch.com/59a9c00b-1ef0-4ec8-8cb6-8313232369e0%2Fcowboy.jpg" height="6" width="6" rotation="-90 0 0"></a-image> -->
+            <a-image src="https://thumbs.dreamstime.com/b/open-box-21598298.jpg" height="6" width="6" rotation="-90 0 0"></a-image>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
